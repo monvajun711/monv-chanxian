@@ -1,0 +1,17 @@
+{
+  "schema_version":"1.0",
+  "report_id":"REPORT-04-FIXTURE",
+  "title":"REPORT-04单位及期间冲突拦截夹具",
+  "instrument":"600000",
+  "as_of":"2026-10-19T12:00:00+08:00",
+  "conclusion_status":"investment_view",
+  "sources":[
+    {"id":"s1","title":"材料A","published_at":"2026-08-01","url":"https://example.org/a"},
+    {"id":"s2","title":"材料B","published_at":"2026-08-02","url":"https://example.org/b"}
+  ],
+  "metrics":[
+    {"id":"revenue_a","canonical_id":"revenue","name":"营收","value":100,"unit":"亿元","period_end":"2025-12-31","source_id":"s1","confidence":"fixture","conflict_note":"期末累计"},
+    {"id":"revenue_b","canonical_id":"revenue","name":"营收","value":100000,"unit":"万元","period_end":"2025-06-30","source_id":"s2","confidence":"fixture","conflict_note":"期间和单位均不同"}
+  ],
+  "sections":[]
+}

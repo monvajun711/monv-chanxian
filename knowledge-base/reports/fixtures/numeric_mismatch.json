@@ -1,0 +1,11 @@
+{
+  "schema_version":"1.0",
+  "report_id":"NUMERIC-MISMATCH-FIXTURE",
+  "title":"数字不一致拦截夹具",
+  "instrument":"600000",
+  "as_of":"2026-10-19T12:00:00+08:00",
+  "sources":[{"id":"s1","title":"样例披露","published_at":"2026-08-01","url":"https://example.org/a"}],
+  "metrics":[{"id":"revenue","name":"营收","value":93777,"unit":"百万元","period_end":"2026-06-30","source_id":"s1","confidence":"fixture"}],
+  "numeric_checks":[{"metric_id":"revenue","operation":"multiply","factor":0.01,"expected":900.00,"tolerance":0.00001}],
+  "sections":[]
+}

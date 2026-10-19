@@ -1,0 +1,22 @@
+{
+  "provider_name": "用户自行选择并已获授权的行情供应商",
+  "endpoint": "https://api.example.com/v1/your-licensed-endpoint?symbol=600000.SH&start=20200101&end=20261019",
+  "api_key_env": "MARKET_DATA_API_KEY",
+  "timeout_seconds": 20,
+  "rows_path": "data.items",
+  "field_map": {
+    "symbol": "symbol",
+    "date": "trade_date",
+    "open": "open",
+    "high": "high",
+    "low": "low",
+    "close": "close",
+    "volume": "volume",
+    "amount": "amount",
+    "adj_open": "adj_open",
+    "adj_high": "adj_high",
+    "adj_low": "adj_low",
+    "adj_close": "adj_close",
+    "adj_factor": "adj_factor"
+  }
+}

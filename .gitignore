@@ -1,0 +1,8 @@
+.env
+providers.json
+market-data/
+learner-progress*.jsonl
+*.api-key
+output/user-reports/
+__pycache__/
+*.py[cod]
